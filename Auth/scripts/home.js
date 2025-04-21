@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 console.log("user", user);
 if (user) {
   const fullName = JSON.parse(user).fullName;
-  const welcomeMessage = `hello ${fullName} in HalaQuiz l hlwi we amira we yali ma fi nema bl deni klaaaaaa we yali bda tsir ahla dc nashallah`;
+  const welcomeMessage = `hello ${fullName} `;
   messageDiv.textContent = welcomeMessage;
   messageDiv.style.fontSize = "20px";
   messageDiv.style.fontWeight = "bold";
