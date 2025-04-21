@@ -85,4 +85,29 @@
   .user-details .input-box ::placeholder {
     color: black;
   }
+  form .button {
+    text-align: center;
+    margin-top: 30px;
+  }
   
+  form .button input {
+    width: 80%;
+    padding: 12px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.7;
+  }
+  
+  form .button input:hover {
+    width: 100%;
+    color: white;
+    background: #787ff6;
+    opacity: 1;
+  }
+    
