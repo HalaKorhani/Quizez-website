@@ -31,4 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const confirmPassword = confirmPasswordInput.value;
     const gender = genderMale.checked ? "Male" : genderFemale.checked ? "Female" : "";
   });
-  
+  if (password !== confirmPassword) {
+    alert("Passwords do not match.");
+    return;
+  }
+
+  if (!fullName || !username || !email || !phone || !password || !gender) {
+    alert("Please fill in all fields.");
+    return;
+  }
+
