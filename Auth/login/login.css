@@ -140,4 +140,72 @@
     background: #787ff6;
     opacity: 1;
   }
-    
+ /* Responsive Design */
+@media (max-width: 600px) {
+    body {
+      padding: 10px;
+      align-items: flex-start;
+    }
+  
+    .container {
+      width: 100%;
+      margin-top: 30px;
+      box-shadow: none;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  
+    .user-details {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .user-details .input-box {
+      width: 100% !important;
+    }
+  
+    .gender-details {
+      text-align: center;
+    }
+  
+    .gender-details .category {
+      flex-direction: row;
+      justify-content: center;
+      gap: 30px;
+    }
+  
+    form .button input,
+    .goTOHome a {
+      width: 100% !important;
+      font-size: 16px;
+    }
+  
+    .goTOHome {
+      margin-top: 15px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .container .title {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .user-details .input-box .details {
+      font-size: 14px;
+    }
+  
+    .user-details .input-box input {
+      font-size: 14px;
+    }
+  
+    form .button input,
+    .goTOHome a {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+     
