@@ -13,4 +13,36 @@
     background: linear-gradient(45deg, white 8%, #48dbfb 50%, #7f72f5 100%);
     padding: 20px;
   }
+  .container {
+    max-width: 700px;
+    width: 100%;
+    background: transparent;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: formee 1.2s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .container .title {
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+    animation: title 1.5s ease forwards;
+    opacity: 0;
+    animation-delay: 0.8s;
+  }
+  
+  .container .title::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 40px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
   
