@@ -55,6 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
     gender,
   };
 
-  users.push(newUser);
-  localStorage.setItem("users", JSON.stringify(users));
+  if (email === "admin@quiz.com" && password === "admin123") {
+    window.location.href = "dashboard.html";
+    return;
+  }
 
+  sessionStorage.setItem("loggedInUser", JSON.stringify(newUser));
+  window.location.href = "../home/home.html";
+});
