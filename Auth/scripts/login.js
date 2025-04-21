@@ -12,4 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
           window.location.href = "../dashoard/dashboard.html";
           return;
         }
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+        const user = users.find((e) => e.email === email);
     
+        if (user && user.password === password) {
+          sessionStorage.setItem("loggedInUser", JSON.stringify(user));
+          window.location.href = "../home/home.html";
+        } else {
+          alert("Invalid email or password. Please try again.");
+        }
+      });
+    });
+     
