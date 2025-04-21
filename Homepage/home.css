@@ -134,4 +134,23 @@
     opacity: 0;
     animation-delay: 1.4s;
   }
-   
+  @media (max-width: 1024px) {
+    .content {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .content img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
+  
+    .parag {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
