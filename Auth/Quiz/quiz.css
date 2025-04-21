@@ -149,4 +149,84 @@
       .btn-group .continue:hover {
         background-color: #257991;
       }
-                
+      .quiz-container {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0f1e2d;
+        align-items: center;
+        justify-content: center;
+      }
+      .quiz-section {
+        width: 90%;
+        max-width: 550px;
+      }
+      .quiz-box {
+        width: 100%;
+        border: 2px solid #37a7bf;
+        border-radius: 6px;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+      }
+      .quiz-box h1 {
+        font-size: 32px;
+        text-align: center;
+        background: linear-gradient(45deg, transparent, #37a7bf, transparent);
+        border-radius: 6px;
+      }
+      .quiz-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-bottom: 2px solid #37a7bf;
+      }
+      .quiz-header .header-score {
+        background-color: #37a7bf;
+        padding: 7px;
+      }
+      .question-text {
+        font-size: 24px;
+      }
+      .option-list .option {
+        padding: 12px;
+        border: 2px solid rgba(225, 225, 225, 0.2);
+        border-radius: 4px;
+        font-size: 17px;
+        margin: 15px 0;
+      }
+      .option-list .option:hover {
+        background-color: rgba(140, 232, 252, 0.1);
+        border: 1px solid #8ce8fc;
+      }
+      .option-list .correct {
+        border: 2px solid #00ff88;
+        color: #00ff88;
+      }
+      .option-list .incorrect {
+        border: 2px solid #ff4d4d;
+        color: #ff4d4d;
+      }
+      .quiz-footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #37a7bf;
+        padding-top: 20px;
+      }
+      .quiz-footer .next-btn {
+        width: 100%;
+        height: 45px;
+        border-radius: 6px;
+        font-size: 16px;
+        background-color: rgba(140, 232, 252, 0.1);
+        border: 2px solid rgba(140, 232, 252, 0.2);
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .quiz-footer .next-btn:hover {
+        background-color: #37a7bf;
+        color: white;
+      }
+                   
