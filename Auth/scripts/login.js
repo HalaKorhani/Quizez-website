@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         if (user && user.password === password) {
           sessionStorage.setItem("loggedInUser", JSON.stringify(user));
-          window.location.href = "../home/home.html";
+          window.location.href = "../Homepage/home.html";
         } else {
           alert("Invalid email or password. Please try again.");
         }
