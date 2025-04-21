@@ -12,4 +12,8 @@ body {
       #7f72f5 100%
     );
   }
+  h1 {
+    color: #333;
+    margin-bottom: 30px;
+  }
   
