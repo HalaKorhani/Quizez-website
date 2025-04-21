@@ -157,4 +157,35 @@ const allQuestions = [
       },
     ],
   ];
+ // utils.js
+
+function getQuizName(index) {
+    return ["HTML", "CSS", "JavaScript"][index];
+  }
   
+  function getLoggedInUser() {
+    try {
+      return JSON.parse(sessionStorage.getItem("loggedInUser")) || null;
+    } catch (e) {
+      console.error("Error reading loggedInUser from sessionStorage:", e);
+      return null;
+    }
+  }
+  
+  function getQuizResults() {
+    try {
+      return JSON.parse(localStorage.getItem("quizResults")) || [];
+    } catch (e) {
+      console.error("Error reading quizResults from localStorage:", e);
+      return [];
+    }
+  }
+  
+  function saveQuizResults(results) {
+    try {
+      localStorage.setItem("quizResults", JSON.stringify(results));
+    } catch (e) {
+      console.error("Error saving quizResults to localStorage:", e);
+    }
+  }
+   
