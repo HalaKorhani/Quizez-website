@@ -105,4 +105,48 @@
         font-family: verdana;
         color: #8ce8fc;
       }
-             
+      .popup-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        background-color: white;
+        border-radius: 6px;
+        padding: 10px 25px;
+        color: #0f1e2d;
+        display: none;
+      }
+      .popup-info h2 {
+        font-size: 50px;
+        color: #37a7bf;
+      }
+      .popup-info .info {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 4px 0;
+      }
+      .btn-group {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+      }
+      .info-btn {
+        background-color: #37a7bf;
+        color: white;
+        padding: 8px;
+        border-radius: 8px;
+        font-weight: 600;
+      }
+      .btn-group .exit {
+        background-color: transparent;
+        color: #37a7bf;
+      }
+      .btn-group .exit:hover {
+        background-color: #37a7bf;
+        color: white;
+      }
+      .btn-group .continue:hover {
+        background-color: #257991;
+      }
+                
