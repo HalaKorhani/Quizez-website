@@ -30,4 +30,30 @@
     width: 100%;
     display: block;
     object-fit:
-  
+    .btn, .btn-primary {
+        display: inline-block;
+        padding: 1rem 2rem;
+        font-weight: 500;
+        transition: all 400ms ease;
+      }
+      .btn {
+        background-color: #8ce8fc;
+        color: #0f1e2d;
+        border: 1px solid transparent;
+      }
+      .btn:hover {
+        background-color: transparent;
+        color: #8ce8fc;
+        border-color: #8ce8fc;
+      }
+      .btn-primary {
+        border: 1px solid #8ce8fc;
+        border-radius: 20px;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      .btn-primary:hover {
+        background-color: transparent;
+        color: #8ce8fc;
+      }
+      
