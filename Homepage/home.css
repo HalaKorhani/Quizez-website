@@ -100,4 +100,38 @@
     border-radius: 5px;
     box-shadow: 2px 2px 2px black;
   }
-    
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    background-color: transparent;
+  }
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(-45deg, white 50%, #48dbfb 70%, #7f72f5 100%);
+    width: 80%;
+    height: 100%;
+    margin-top: 50px;
+    box-shadow: 3px 3px 3px 3px #99adcf;
+    border-radius: 10px;
+  }
+  .content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: imgg 1.2s ease forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
+  }
+  .parag {
+    margin-left: 20px;
+    width: 30%;
+    text-align: left;
+    animation: parag 1.2s ease forwards;
+    opacity: 0;
+    animation-delay: 1.4s;
+  }
+   
