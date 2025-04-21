@@ -28,4 +28,12 @@ body {
     padding: 12px 15px;
     border: 1px solid #ddd;
   }
+  th {
+    background-color: #7880f6;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
    
