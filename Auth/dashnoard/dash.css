@@ -16,4 +16,11 @@ body {
     color: #333;
     margin-bottom: 30px;
   }
+  table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+  
+    box-shadow: 10px 0px 0px 30px rgba(255, 0, 0, 0.1);
+  }
   
