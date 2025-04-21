@@ -46,4 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Email is already registered.");
     return;
   }
+  const newUser = {
+    fullName,
+    username,
+    email,
+    phone,
+    password,
+    gender,
+  };
+
+  users.push(newUser);
+  localStorage.setItem("users", JSON.stringify(users));
 
