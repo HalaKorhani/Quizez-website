@@ -21,3 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   const genderMale = document.getElementById("dot-1");
   const genderFemale = document.getElementById("dot-2");
+  registerForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const fullName = fullNameInput.value.trim();
+    const username = usernameInput.value.trim();
+    const email = emailInput.value.trim();
+    const phone = phoneInput.value.trim();
+    const password = passwordInput.value;
+    const confirmPassword = confirmPasswordInput.value;
+    const gender = genderMale.checked ? "Male" : genderFemale.checked ? "Female" : "";
+  });
+  
