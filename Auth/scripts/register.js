@@ -19,3 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
   const confirmPasswordInput = registerForm.querySelector(
     'input[placeholder="Confirm your password"]'
   );
+  const genderMale = document.getElementById("dot-1");
+  const genderFemale = document.getElementById("dot-2");
