@@ -253,4 +253,47 @@
       .result-box.show {
         display: flex;
       }
-                      
+      .quiz-selection-area {
+        padding: 8rem 0 6rem;
+        text-align: center;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(hex-textured-background-networking.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .quiz-main-title {
+        margin-bottom: 3rem;
+        color: #8ce8fc;
+      }
+      .quiz-selection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+      }
+      .quiz-card {
+        background-color: rgba(15, 30, 45, 0.8);
+        border: 1px solid #37a7bf;
+        border-radius: 10px;
+        padding: 2rem;
+        width: 300px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .quiz-card:hover {
+        transform: translateY(-10px);
+        border-color: #8ce8fc;
+      }
+      .quiz-card h2 {
+        color: #8ce8fc;
+      }
+      .quiz-card p {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .quiz-card .btn-primary {
+        width: 100%;
+      }
+                         
