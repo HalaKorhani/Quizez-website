@@ -40,4 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Please fill in all fields.");
     return;
   }
+  const users = JSON.parse(localStorage.getItem("users")) || [];
+  const emailExists = users.some((user) => user.email === email);
+  if (emailExists) {
+    alert("Email is already registered.");
+    return;
+  }
 
