@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const registerForm = document.querySelector("form");
-  });
+  const registerForm = document.querySelector("form");
   const fullNameInput = registerForm.querySelector(
     'input[placeholder="Enter your name"]'
   );
@@ -21,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   const genderMale = document.getElementById("dot-1");
   const genderFemale = document.getElementById("dot-2");
+
   registerForm.addEventListener("submit", function (e) {
     e.preventDefault();
     const fullName = fullNameInput.value.trim();
@@ -30,36 +30,37 @@ document.addEventListener("DOMContentLoaded", function () {
     const password = passwordInput.value;
     const confirmPassword = confirmPasswordInput.value;
     const gender = genderMale.checked ? "Male" : genderFemale.checked ? "Female" : "";
+
+    if (password !== confirmPassword) {
+      alert("Passwords do not match.");
+      return;
+    }
+
+    if (!fullName || !username || !email || !phone || !password || !gender) {
+      alert("Please fill in all fields.");
+      return;
+    }
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const emailExists = users.some((user) => user.email === email);
+    if (emailExists) {
+      alert("Email is already registered.");
+      return;
+    }
+    const newUser = {
+      fullName,
+      username,
+      email,
+      phone,
+      password,
+      gender,
+    };
+
+    if (email === "admin@quiz.com" && password === "admin123") {
+      window.location.href = "dashboard.html";
+      return;
+    }
+
+    sessionStorage.setItem("loggedInUser", JSON.stringify(newUser));
+    window.location.href = "../Homepage/home.html";
   });
-  if (password !== confirmPassword) {
-    alert("Passwords do not match.");
-    return;
-  }
-
-  if (!fullName || !username || !email || !phone || !password || !gender) {
-    alert("Please fill in all fields.");
-    return;
-  }
-  const users = JSON.parse(localStorage.getItem("users")) || [];
-  const emailExists = users.some((user) => user.email === email);
-  if (emailExists) {
-    alert("Email is already registered.");
-    return;
-  }
-  const newUser = {
-    fullName,
-    username,
-    email,
-    phone,
-    password,
-    gender,
-  };
-
-  if (email === "admin@quiz.com" && password === "admin123") {
-    window.location.href = "dashboard.html";
-    return;
-  }
-
-  sessionStorage.setItem("loggedInUser", JSON.stringify(newUser));
-  window.location.href = "../home/home.html";
 });
