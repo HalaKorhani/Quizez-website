@@ -20,3 +20,11 @@ if (user) {
   quizButton.style.display = "none";
   logoutButton.style.display = "none";
 }
+logoutButton.addEventListener("click", function () {
+    sessionStorage.removeItem("loggedInUser");
+    messageDiv.textContent = "";
+    quizButton.style.display = "none";
+    logoutButton.style.display = "none";
+    window.location.href = "../login/login.html";
+  });
+  
